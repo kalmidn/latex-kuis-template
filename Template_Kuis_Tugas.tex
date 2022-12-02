@@ -1,91 +1,40 @@
 \documentclass[12pt]{article}
-\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}%Label "Problem" dapat diganti dengan custom label pada opsi []
 		\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+%package yang digunakan
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{amssymb}
-\usepackage{caption}
+\usepackage{caption} %untuk modifikasi caption pada gambar dan tabel
 \graphicspath{ {./images/} }
+\usepackage{blindtext} %%%%%package tambahan khusus untuk template ini. Saat penggunaan untuk pembuatan dokumen asli bisa di comment
 
 \begin{document}
-	\renewcommand{\labelenumi}{(\alph{enumi})}
+	\renewcommand{\labelenumi}{(\alph{enumi})} %mengganti enumerate angka dengan alphanumeric
 	
-	\title{Kuis 2}
-	%\title{Problem Set Arus Listrik dan Rangkaian DC}
-	\author{Fisika Matematika I Kelas C, 2022-2023\\ Dosen: Mohammad Haekal, Ph.D.}
-	%\author{Dosen: Mohammad Haekal, Ph.D.}
-	\date{24 November 2022 (15.30-17.10)}
+	\title{Judul kuis/tugas}
+	\author{NAMA MATA KULIAH\\ Dosen: XXZZYY}%Dapat ditambah baris
+	\date{DD MM YYYY (HH.MM-HH.MM)}%Tgl tugas diberikan/deadline pengumpulan/pelaksanaan kuis
 	\maketitle
 	
-	
+	%%%%%% Peraturan Kuis/Tugas
 	\begin{center}
 		\fbox{\fbox{\parbox{5.5in}{\begin{itemize}
-						\item Kuis bersifat \textbf{\textit{closed-book}}. Tidak diperbolehkan ada kerjasama sesama peserta kuis dalam bentuk apapun.
-						\item Pada saat kuis berlangsung, hanya boleh ada alat tulis, kertas soal, kertas jawaban dan lembar coretan di atas meja masing-masing peserta. Seluruh barang lain disimpan di dalam tas yang dikumpulkan di depan kelas sebelum kuis berlangsung.
-						\item Beri nama dan NRP yang jelas untuk masing-masing lembar soal, lembar jawaban, \textbf{dan} lembar coretan.
-						\item Penulisan jawaban boleh tidak sesuai urutan nomor. Namun penulisan nomor pada tiap jawaban wajib dicantumkan dengan jelas.
-						%\item Masing-masing peserta wajib membawa kalkulator masing-masing dan tidak diperkenankan menggunakan ponsel sebagai kalkulator.
-						\item  Setelah selesai mengerjakan kuis, kumpulkan \textbf{lembar soal, lembar jawaban dan lembar coretan} ke pengawas. 
-						\item Segala indikasi bentuk kecurangan, akan diberikan sanksi berupa \textbf{nilai E} secara otomatis untuk mata kuliah ini.
+						\item Aturan 1
+						\item Aturan 2
+						\item Aturan 3
 		\end{itemize}}}}
 	\end{center}
 	\pagebreak
 	
-	\begin{problem}[Soal]{1}%Boas 3-4.23
-		Buktikan apakah $\vec{B}=0$ jika diketahui bahwa $\vec{A}=2\ \hat{i}-3\ \hat{j}+k$ dan:
-		\begin{enumerate}
-			\item $\vec{A}\cdot\vec{B}=0$
-			\item $\vec{A}\times\vec{B}=0$
-			\item jika kedua nilai $\vec{A}\cdot\vec{B}=0$ dan $\vec{A}\times\vec{B}=0	$
-			\end{enumerate}
+	\begin{problem}[Soal]{1} 
+		\blindtext
 	\end{problem}
 	
-	\begin{problem}[Soal]{2}%Boas 3-5.27
-		Tinjau dua buah garis yang dinyatakan oleh
-		\begin{equation*}
-			\frac{x-1}{2}=\frac{y+3}{1}=\frac{z-4}{3}
-		\end{equation*}
-		dan
-		\begin{equation*}
-			\frac{x+3}{4}=\frac{y+4}{1}=\frac{8-z}{4}
-		\end{equation*}
-		dengan menggunakan metode vektor untuk menyatakan garis dan bidang, buktikanlah apakah kedua garis tersebut berpotongan di satu titik?
+	\begin{problem}[Soal]{2}
+		\blindtext
 	\end{problem}
-	
-	\begin{problem}[Soal]{3}%SEssentials Linear Algebra
-		Dengan menggunakan \textbf{metode reduksi baris}, carilah solusi dari sistem persamaan linier berikut:
-		\begin{equation*}
-			\begin{split}
-				x_1-2x_2+2x_3-x_4 &= -14\\
-				3x_1+2x_2-x_3+2x_4 &= 17\\
-				2x_1+3x_2-x_3-x_4 &= 18\\
-				-2x_1+5x_2-3x_3-3x_4 &= 26
-			\end{split}
-		\end{equation*}
-	\end{problem}
-	
-	\begin{problem}[Soal]{4}%SEssentials Linear Algebra
-		Dengan menggunakan \textbf{metode aturan Cramer}, carilah solusi dari sistem persamaan linier berikut:
-		\begin{equation*}
-			\begin{split}
-				5x+2y+z &= 3\\
-				2x-y+2z &= 7\\
-				x+5y-z &= 6
-			\end{split}
-		\end{equation*}
-	\end{problem}
-	
-%	\begin{problem}[(4 poin) Soal]{5}%Serway 5.73
-%		Seorang pemodif membeli sebuah mobil bekas untuk diubah menjadi mobil balap. Setelah dilakukan analisis, dia menemukan bahwa mobil tersebut mampu berakselerasi sebesar $8.40\ km/(hr\cdot s)$ di trek lurus. Dengan melakukan simulasi sederhana, pemodif tersebut mengetahui bahwa dengan memodifikasi mesinnya, dia bisa meningkatkan gaya dorong horizontal total yang diterima oleh mobil sebesar $24.0\%$. Namun, dengan biaya yang lebih murah, dia juga bisa menghilangkan material dari bodi mobil yang dirasa tidak diperlukan pada sebuah balapan untuk menurunkan massa mobilnya sebesar $24.0\%$.
-%		\begin{enumerate}
-%			\item Pilihan mana di antara dua pilihan tersebut yang akan menghasilkan peningkatan lebih besar pada akselerasi mobil?
-%			\item Jika pemodif tersebut melakukan kedua-duanya, berapa akselerasi yang bisa dicapai?
-%		\end{enumerate}
-%	\end{problem}
-	
-	
-	
-	%\includegraphics[]{}
 \end{document}
